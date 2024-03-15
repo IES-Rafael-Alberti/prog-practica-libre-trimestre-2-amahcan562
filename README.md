@@ -67,28 +67,55 @@ Este conjunto de preguntas está diseñado para ayudarte a reflexionar sobre có
 #### **Criterio global 1: Instancia objetos y hacer uso de ellos**
 - **(2.a, 2.b, 2.c, 2.d, 2.f, 2.h, 4.f, 4.a)**: Describe cómo has instanciado y utilizado objetos en tu proyecto. ¿Cómo has aplicado los constructores y pasado parámetros a los métodos? Proporciona ejemplos específicos de tu código.
 
+He instanciado objetos en mi proyecto en la clase `main.kt` creando una variable y más abajo llamándola, acompañada de un método.
+
+Los constructores que he realizado han sido primarios, añadiendo las propiedades a la clase. Los parámetros los he pasado añadiéndolos en los paréntesis de los métodos.
+
+Un ejemplo podría ser la instancia del menú en main, donde se crea la variable y posteriormente se llama al método `.mostrarMenu,`. 
+
 #### **Criterio global 2: Crear y llamar métodos estáticos**
 - **(4.i)**: ¿Has definido algún método/propiedad estático en tu proyecto? ¿Cuál era el objetivo y por qué consideraste que debía ser estático en lugar de un método/propiedad de instancia?
 - **(2.e)**: ¿En qué parte del código se llama a un método estático o se utiliza la propiedad estática?
 
+No he definido ningún método estático en mi proyecto. En todo caso, sería un Companion object como método común a todas las instancias de la clase, pero no lo he considerado necesario. 
+
 #### **Criterio global 3: Uso de entornos**
 - **(2.i)**: ¿Cómo utilizaste el IDE para el desarrollo de tu proyecto? Describe el proceso de creación, compilación, y prueba de tu programa.
+
+El IDE que he empleado ha sido IntelliJ IDEA, que me ha facilitado la creación de clases, la compilación y la prueba de mi programa. En este caso, la creación de clases ha sido muy sencilla, ya que con un clic derecho en la carpeta src/main/kotlin he podido crear una nueva clase. La compilación ha sido automática, y la prueba de mi programa ha sido tarea sencilla, ya que tenemos la opción de ejecutar el programa en la parte superior derecha de la pantalla.
 
 #### **Criterio global 4: Definir clases y su contenido**
 - **(4.b, 4.c, 4.d, 4.g)**: Explica sobre un ejemplo de tu código, cómo definiste las clases en tu proyecto, es decir como identificaste las de propiedades, métodos y constructores y modificadores del control de acceso a métodos y propiedades, para representar al objeto del mundo real. ¿Cómo contribuyen estas clases a la solución del problema que tu aplicación aborda?
 
+Las clases las he definido en mi proyecto con propiedades, métodos y constructores. Las propiedades son las características de cada clase, los métodos son las acciones que pueden realizar y los constructores son los métodos que se ejecutan al instanciar la clase.
+
+Contribuyen a la solución del problema que mi aplicación aborda, ya que, gracias a las clases, puedo crear objetos que representen elementos del mundo real y que tengan sus propias características y métodos.
+
 #### **Criterio global 5: Herencia y uso de clases abstractas e interfaces**
 - **(4.h, 4.j, 7.a, 7.b, 7.c)**: Describe sobre tu código cómo has implementado la herencia o utilizado interfaces en tu proyecto. ¿Por qué elegiste este enfoque y cómo beneficia a la estructura de tu aplicación? ¿De qué manera has utilizado los principios SOLID para mejorar el diseño de tu proyecto? ¿Mostrando tu código, contesta a qué principios has utilizado y qué beneficio has obtenido?
+
+He implementado dos abstract class, que son las clases padre y de ahi heredan clases derivadas, de las que se instanciará. He elegido ese enfoque para poder hacer varios tipos de un elemento y que cada uno tenga sus propias características.
+
+He usado los principios SOLID para mejorar el diseño de mi proyecto, en concreto el principio de responsabilidad única, ya que cada clase tiene una única responsabilidad.
 
 #### **Criterio global 6: Diseño de jerarquía de clases**
 - **(7.d, 7.e, 7.f, 7.g)**: Presenta la jerarquía de clases que diseñaste. ¿Cómo probaste y depuraste esta jerarquía para asegurar su correcto funcionamiento? ¿Qué tipo de herencia has utilizado: Especificación, Especialización, Extensión, Construcción?
 
+Para asegurarme del correcto funcionamiento de las jerarquías, he tratado de añadir funcionalidades diferentes a las clases derivadas para que se vea que cada una tiene sus propias características. He dividido la gestión sobre cada una para que se vea que cada una tiene su propia responsabilidad. 
+
 #### **Criterio global 7: Librerías de clases**
 - **(2.g, 4.k)**: Describe cualquier librería externa que hayas incorporado en tu proyecto. Explica cómo y por qué las elegiste, y cómo las incorporaste en tu proyecto. ¿Cómo extendió la funcionalidad de tu aplicación? Proporciona ejemplos específicos de su uso en tu proyecto.
+
+No he incorporado ninguna librería externa en mi proyecto.
 
 #### **Criterio global 8: Documentado**
 - **(7.h)**: Muestra ejemplos de cómo has documentado y comentado tu código. ¿Que herramientas has utilizado? ¿Cómo aseguras que tu documentación aporte valor para la comprensión, mantenimiento y depuración del código?
 
+He utilizado la herramienta de documentación de Kotlin, que es KDoc.
+
+La documentación aporta valor para la comprensión del programa porque especifica con detalle qué hace cada método y qué tipo de parámetros recibe. Además, aporta valor para el mantenimiento y depuración del código porque si, en un futuro quiero modificar y mejorar el código, se podrá entender más fácilmente.
+
 #### **Criterio global 9: Genéricos**
 - **(6.f)**: Muestra ejemplos de tu código sobre cómo has implementado una clase con genéricos. ¿Qué beneficio has obtenido?
 
+No he empleado genéricos en mi proyecto.
