@@ -3,9 +3,18 @@ package org.practicatrim2.PackMenu
 import org.practicatrim2.Gestion.GestionAutocaravana
 import org.practicatrim2.Vehiculos.Autocaravana
 
+/**
+ * Clase que representa el menú de gestión de autocaravanas
+ */
+
 class MenuAutocaravana {
     val gestionAutocaravana = GestionAutocaravana()
     var continuar = true
+
+    /**
+     * Función que muestra el menú de gestión de autocaravanas
+     */
+
     fun mostrarMenuAutocaravana() {
         do {
             println(
@@ -17,7 +26,7 @@ class MenuAutocaravana {
                 2. Eliminar autocaravana
                 3. Buscar autocaravana por modelo
                 4. Mostrar autocaravanas
-                5. Volver al menú principal
+                5. Volver al menú de selección de tipo de vehículo
                 6. Salir
                 """
             )
@@ -56,6 +65,7 @@ class MenuAutocaravana {
                             numeroDeCamas
                         )
                     )
+                    println("Autocaravana añadida correctamente.")
                 }
                 2 -> {
                     println("Introduzca el modelo de la autocaravana a eliminar:")
@@ -84,7 +94,7 @@ class MenuAutocaravana {
                     gestionAutocaravana.mostrarAutocaravanas()
                 }
                 5 -> {
-                    println("Volviendo al menú principal...")
+                    println("Volviendo al menú de selección de tipo de vehículo...")
                     continuar = false
                 }
                 6 -> {

@@ -1,5 +1,15 @@
 package org.practicatrim2.Personas
 
+/**
+ * Clase que representa a un empleado.
+ * @param nombreCompleto Nombre completo del empleado.
+ * @param dni DNI del empleado.
+ * @param direccion Dirección del empleado.
+ * @param telefono Teléfono del empleado.
+ * @param contrasenia Contraseña del empleado.
+ * @param sueldo Sueldo del empleado.
+ */
+
 class Empleado (
     nombreCompleto: String,
     dni: String,
@@ -15,6 +25,6 @@ class Empleado (
     }
 
     override fun toString(): String {
-        return "Nombre: $nombreCompleto, DNI: $dni, Dirección: $direccion, Teléfono: $telefono, Sueldo: $sueldo."
+        return "Nombre: $nombreCompleto, DNI: $dni, Dirección: $direccion, Teléfono: $telefono, Sueldo: $sueldo.€"
     }
 }

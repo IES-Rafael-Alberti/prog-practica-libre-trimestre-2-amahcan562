@@ -3,6 +3,18 @@ package org.practicatrim2.Vehiculos
 import org.practicatrim2.Enums.Propulsion
 import org.practicatrim2.Enums.Transmision
 
+/**
+ * Clase abstracta que representa un vehículo.
+ * @param marca Marca del vehículo.
+ * @param modelo Modelo del vehículo.
+ * @param anio Año del vehículo.
+ * @param precio Precio del vehículo.
+ * @param kilometraje Kilometraje del vehículo.
+ * @param color Color del vehículo.
+ * @param propulsion Propulsión del vehículo.
+ * @param transmision Transmisión del vehículo.
+ */
+
 abstract class Vehiculo(
     val marca: String,
     val modelo: String,

@@ -3,6 +3,19 @@ package org.practicatrim2.Vehiculos
 import org.practicatrim2.Enums.Propulsion
 import org.practicatrim2.Enums.Transmision
 
+/**
+ * Clase que representa una autocaravana.
+ * @param marca Marca de la autocaravana.
+ * @param modelo Modelo de la autocaravana.
+ * @param anio Año de la autocaravana.
+ * @param precio Precio de la autocaravana.
+ * @param kilometraje Kilometraje de la autocaravana.
+ * @param color Color de la autocaravana.
+ * @param propulsion Propulsión de la autocaaravana.
+ * @param transmision Transmisión de la autocaravana.
+ * @param numeroDeCamas Número de camas que tiene la autocaravana.
+ */
+
 class Autocaravana (
     marca: String,
     modelo: String,

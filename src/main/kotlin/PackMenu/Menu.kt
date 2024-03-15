@@ -7,8 +7,15 @@ import org.practicatrim2.PackMenu.MenuCoche
 import org.practicatrim2.PackMenu.MenuFurgoneta
 import org.practicatrim2.Personas.Cliente
 
+/**
+ * La clase Menu se utiliza para manejar la interacción del usuario con el sistema de gestión del concesionario.
+ * @property gestionEmpleado Una instancia de la clase GestionEmpleado que se utiliza para realizar operaciones relacionadas con los empleados.
+ */
 class Menu (private val gestionEmpleado : GestionEmpleado){
 
+    /**
+     * Muestra el menú principal del sistema de gestión del concesionario.
+     */
 
     fun menuPrincipal(){
         do {
@@ -57,7 +64,9 @@ class Menu (private val gestionEmpleado : GestionEmpleado){
         }while (true)
     }
 
-
+    /**
+     * Muestra el menú de empleado, que permite al empleado gestionar clientes, vehículos y otros empleados.
+     */
 
     fun menuEmpleado(){
         var continuar = true
@@ -101,6 +110,10 @@ class Menu (private val gestionEmpleado : GestionEmpleado){
             }
         }while (continuar)
     }
+
+    /**
+     * Muestra el menú de gestión de clientes, que permite al empleado realizar operaciones relacionadas con los clientes.
+     */
 
     fun menuGestionClientes(){
         val gestionCliente = GestionCliente()
@@ -179,6 +192,10 @@ class Menu (private val gestionEmpleado : GestionEmpleado){
         } while (continuar)
     }
 
+    /**
+     * Muestra el menú de gestión de empleados, que permite al empleado realizar operaciones relacionadas con otros empleados.
+     */
+
     fun menuGestionEmpleados(){
         var continuar = true
         do {
@@ -253,6 +270,10 @@ class Menu (private val gestionEmpleado : GestionEmpleado){
             }
     }while (continuar)
     }
+
+    /**
+     * Muestra el menú de gestión de stock, que permite al empleado gestionar diferentes tipos de vehículos.
+     */
 
     fun menuGestionStock(){
         var continuar = true

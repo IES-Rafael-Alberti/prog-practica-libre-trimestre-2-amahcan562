@@ -3,9 +3,18 @@ package org.practicatrim2.PackMenu
 import org.practicatrim2.Gestion.GestionFurgoneta
 import org.practicatrim2.Vehiculos.Furgoneta
 
+/**
+ * Clase que representa el menú de gestión de furgonetas
+ */
+
 class MenuFurgoneta {
     val gestionFurgoneta = GestionFurgoneta()
     var continuar = true
+
+    /**
+     * Función que muestra el menú de gestión de furgonetas
+     */
+
     fun mostrarMenuFurgoneta() {
         do {
             println(
@@ -17,7 +26,7 @@ class MenuFurgoneta {
                 2. Eliminar furgoneta
                 3. Buscar furgoneta por modelo
                 4. Mostrar furgonetas
-                5. Volver al menú principal
+                5. Volver al menú de selección de tipo de vehículo
                 6. Salir
                 """
             )
@@ -56,6 +65,7 @@ class MenuFurgoneta {
                             capacidadDeCarga
                         )
                     )
+                    println("Furgoneta añadida correctamente.")
                 }
                 2 -> {
                     println("Introduzca el modelo de la furgoneta a eliminar:")
@@ -68,6 +78,7 @@ class MenuFurgoneta {
                         println("Introduzca el número del coche a eliminar:")
                         val numero = readln().toInt()
                         gestionFurgoneta.eliminarFurgoneta(furgonetas[numero - 1])
+                        println("Furgoneta eliminada correctamente.")
                     }
                 }
                 3 -> {
@@ -84,7 +95,7 @@ class MenuFurgoneta {
                     gestionFurgoneta.mostrarFurgonetas()
                 }
                 5 -> {
-                    println("Volviendo al menú principal...")
+                    println("Volviendo al menú de selección de tipo de vehículo...")
                     continuar = false
                 }
                 6 -> {

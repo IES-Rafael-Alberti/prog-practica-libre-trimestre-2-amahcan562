@@ -3,10 +3,18 @@ package org.practicatrim2.PackMenu
 import org.practicatrim2.Gestion.GestionCoche
 import org.practicatrim2.Vehiculos.Coche
 
+/**
+ * Clase que muestra el menú de gestión de coches
+ */
 
 class MenuCoche {
     val gestionCoche = GestionCoche()
     var continuar = true
+
+    /**
+     * Muestra el menú de gestión de coches
+     */
+
     fun mostrarMenuCoche() {
         do {
             println(
@@ -18,7 +26,7 @@ class MenuCoche {
                 2. Eliminar coche
                 3. Buscar coche por modelo
                 4. Mostrar coches
-                5. Volver al menú principal
+                5. Volver al menú de selección de tipo de vehículo
                 6. Salir
                 """
             )
@@ -57,6 +65,7 @@ class MenuCoche {
                             numeroDePuertas
                         )
                     )
+                    println("Coche añadido correctamente.")
                 }
 
                 2 -> {
@@ -70,6 +79,7 @@ class MenuCoche {
                         println("Introduzca el número del coche a eliminar:")
                         val numero = readln().toInt()
                         gestionCoche.eliminarCoche(coches[numero - 1])
+                        println("Coche eliminado correctamente.")
                     }
                 }
 
@@ -89,7 +99,7 @@ class MenuCoche {
                 }
 
                 5 -> {
-                    println("Volviendo al menú principal...")
+                    println("Volviendo al menú de selección de tipo de vehículo...")
                     continuar = false
                 }
 
